@@ -1,9 +1,9 @@
-# Using Concerns to Organize and DRY Up Your Code
+# Using Concerns to Organize and DRY Up Your Code 🧱
 
 ## Introduction to Rails Concerns
 In your Rails application, you often encounter scenarios where multiple models share the same functionalities. Managing these shared functionalities can be cumbersome and might lead to code duplication. To tackle this, Rails provides a powerful feature called [Concerns](https://api.rubyonrails.org/v7.0/classes/ActiveSupport/Concern.html). This lesson will guide you through understanding Rails concerns, how they work, and how you can utilize them to keep your codebase clean, readable and DRY (Don't Repeat Yourself).
 
-## Module vs Classes
+## Modules vs Classes
 - **Classes** are used when you need to model objects that have both state (instance variables) and behavior (methods).
 - **Modules** are used when you want to encapsulate behaviors that can be shared across multiple classes, or when you need to namespace similar groups of classes, methods, or constants to avoid naming conflicts.
 
