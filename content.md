@@ -107,6 +107,7 @@ end
 ```
 
 - **Consider Dependencies**: Make sure to handle any dependencies between concerns carefully.
+- **SomeAction + able**: it's a common practice to name concerns `SomeAction`+`able` (e.g. `Csvable`, `Taggable`, etc.)
 
 ## Namespaced Concern: Order::Csvable
 Concerns can be a great tool to leverage when organizing specific features in your codebase. Let's say you want to add CSV export functionality to the `Order` model in your application. Instead of adding the CSV-related methods directly into the `Order` model, you can create a concern under the `Order` namespace. Here's how you can structure this:
