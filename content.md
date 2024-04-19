@@ -142,6 +142,15 @@ class Order < ApplicationRecord
 end
 ```
 
+```ruby
+class OrdersController < ApplicationController
+  def index
+    respond_to do |format|
+      format.csv { send_data(@orders.to_csv, filename: "orders.csv") }
+    end
+  end
+```
+
 ### Key Points in Using Namespaced Concerns
 - **Organization**: The concern is kept under the `Order` namespace, which clearly indicates that this concern is specifically designed for the `Order` model.
 - **Modularity**: It keeps the `Order` model lean and focused, while allowing you to extend its functionality in a modular way.
