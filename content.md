@@ -1,7 +1,7 @@
-# Using Concerns to Organize and DRY Up Your Code 🧱
+# Using Modules to Organize and DRY Up Your Code 🧱
 
-## Introduction to Rails Concerns
-In your Rails application, you often encounter scenarios where multiple models share the same functionalities. Managing these shared functionalities can be cumbersome and might lead to code duplication. To tackle this, Rails provides a powerful feature called [Concerns](https://api.rubyonrails.org/v7.0/classes/ActiveSupport/Concern.html). This lesson will guide you through understanding Rails concerns, how they work, and how you can utilize them to keep your codebase clean, readable and DRY (Don't Repeat Yourself).
+## Introduction to Modules
+In your application, you might encounter scenarios where multiple classes share the same functionality. Managing this shared functionality can be cumbersome and might lead to code duplication. You may also encounter classes that become extremely long and difficult to manage. To tackle this, you can add the logic to **Modules** and then mix-in these features as needed. This lesson will guide you through understanding Modules, how they work, and how you can utilize them to keep your codebase clean, readable and DRY (Don't Repeat Yourself).
 
 ## Modules vs Classes
 - **Classes** are used when you need to model objects that have both state (instance variables) and behavior (methods).
@@ -36,7 +36,7 @@ puts buddy.bark # Outputs: Woof!
 ```
 
 ## What are Rails Concerns?
-Rails Concerns are a way to make your Ruby on Rails application's code more modular. This is achieved by extracting code into modules that can be mixed into classes as needed. Concerns go into the `/concerns` directory and are used primarily to house shared methods between classes, but they can also contain validations, associations, or even callbacks.
+Rails provides a powerful feature called [Concerns](https://api.rubyonrails.org/v7.0/classes/ActiveSupport/Concern.html) which extends modules with specific features for Ruby on Rails applications. Rails Concerns are a way to make your Ruby on Rails application's code more modular. This is achieved by extracting code into modules that can be mixed into classes as needed. Concerns go into the `/concerns` directory and are used primarily to house shared methods between classes, but they can also contain validations, associations, or even callbacks.
 
 ## Key Benefits of Using Concerns:
 - **DRY**: Reduces code duplication.
