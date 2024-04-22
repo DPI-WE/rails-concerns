@@ -35,6 +35,10 @@ buddy = Dog.new
 puts buddy.bark # Outputs: Woof!
 ```
 
+<aside>
+A good example of a Module is the [Math](https://ruby-doc.org/3.3.0/Math.html) module included with core Ruby. It provides methods for basic trigonometric, logarithmic, and transcendental functions, and for extracting roots.
+</aside>
+
 ## What are Rails Concerns?
 Rails provides a powerful feature called [Concerns](https://api.rubyonrails.org/v7.0/classes/ActiveSupport/Concern.html) which extends modules with specific features for Ruby on Rails applications. Rails Concerns are a way to make your Ruby on Rails application's code more modular. This is achieved by extracting code into modules that can be mixed into classes as needed. Concerns go into the `/concerns` directory and are used primarily to house shared methods between classes, but they can also contain validations, associations, or even callbacks.
 
