@@ -162,6 +162,45 @@ class OrdersController < ApplicationController
 - **Scalability**: As your application grows, you can easily manage and update functionalities related to `Order` without overcrowding the model file.
 - **File Location**: Ensure the concern is stored in the right directory (`app/models/concerns/order/csvable.rb`) to maintain the structure and avoid loading issues.
 
+## Quiz
+
+- What is the primary purpose of using modules in Ruby?
+- To encapsulate behaviors that can be shared across multiple classes and to avoid code duplication.
+  - Correct! Modules help in sharing functionality and keeping the code DRY.
+- To create instances of objects with state and behavior.
+  - Not quite. This is the purpose of classes, not modules.
+- To handle database connections.
+  - Not quite. Modules are for sharing behavior, not managing database connections.
+{: .choose_best #purpose_of_modules title="Purpose of Modules" points="1" answer="1" }
+
+- When should you use a module instead of a class in Ruby?
+- When you need to instantiate objects with state.
+  - Not quite. Classes are used for instantiating objects with state.
+- When you need to handle HTTP requests.
+  - Not quite. Handling HTTP requests is typically done by controllers in a Rails application.
+- When you want to share behavior across multiple classes or namespace related methods.
+  - Correct! Modules are used for shared behavior and namespaces.
+{: .choose_best #module_vs_class title="Modules vs Classes" points="1" answer="3" }
+
+- What is a key benefit of using Rails Concerns?
+- They help to reduce code duplication and keep the codebase organized.
+  - Correct! Rails Concerns promote DRY principles and better organization.
+- They improve application performance.
+  - Not quite. While they can make code more maintainable, they don't directly improve performance.
+- They handle database migrations.
+  - Not quite. Database migrations are handled by Rails migrations, not Concerns.
+{: .choose_best #rails_concerns_benefit title="Benefits of Rails Concerns" points="1" answer="1" }
+
+- What is a best practice when creating Rails Concerns?
+- Include all possible functionalities a model might need.
+  - Not quite. Concerns should be focused and not overloaded with functionality.
+- Keep them focused on a single, well-defined purpose.
+  - Correct! Concerns should be focused and not handle too many responsibilities.
+- Avoid using `included` and `class_methods` blocks.
+  - Not quite. Using `included` and `class_methods` blocks helps organize the concern's methods.
+{: .choose_best #best_practices_concerns title="Best Practices for Concerns" points="1" answer="2" }
+
+
 ## Conclusion
 Rails Concerns are a fantastic tool for any Ruby on Rails developer looking to refine their codebase. They promote cleaner, more maintainable code by reducing duplication and increasing modularity. By integrating concerns into your development workflow, you enhance the scalability and readability of your application.
 
